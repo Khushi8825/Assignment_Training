@@ -1,0 +1,57 @@
+1. Bubble Sort
+Bubble Sort works by repeatedly comparing adjacent elements and swapping them if they are in the wrong order. This process continues until the entire array becomes sorted.
+
+-Best Case Time Complexity: O(n)
+When the array is already sorted, Bubble Sort only needs one pass to verify order (in optimized versions with a swap-check flag).
+
+-Average Case Time Complexity: O(n²)
+On average, approximately half of the elements need to "bubble" to their correct positions, leading to repeated comparisons and swaps.
+
+-Worst Case Time Complexity: O(n²)
+In the worst case (reverse sorted array), every pair of adjacent elements needs to be swapped in each pass.
+
+Space Complexity: O(1)
+It performs sorting in-place, requiring no extra memory.
+
+Stability: Stable
+Equal elements do not change relative order.
+
+
+
+2. Insertion Sort
+Insertion Sort builds the sorted output one element at a time by inserting each element into the correct position in the already sorted left portion of the array.
+
+-Best Case Time Complexity: O(n)
+When the array is already sorted, each element only requires one comparison.
+
+-Average Case Time Complexity: O(n²)
+On average, each element may need to be compared with half of the elements in the sorted portion.
+
+-Worst Case Time Complexity: O(n²)
+When the array is reverse sorted, each element must shift all previous elements, causing maximum comparisons and shifts.
+
+Space Complexity: O(1)
+It sorts in-place without additional memory.
+
+Stability: Stable
+Equal elements retain their order.
+
+
+
+3. Selection Sort
+Selection Sort repeatedly selects the smallest element from the unsorted portion and places it in its correct position in the sorted portion.
+
+-Best Case Time Complexity: O(n²)
+Even if the array is already sorted, the algorithm still scans for the minimum element in each pass.
+
+-Average Case Time Complexity: O(n²)
+Each of the n elements must be compared with remaining unsorted elements.
+
+-Worst Case Time Complexity: O(n²)
+Similar to average case due to the fixed scanning behavior.
+
+Space Complexity: O(1)
+Sorting is done in-place.
+
+Stability: Not Stable
+Swapping elements may change the relative order of equal values.
