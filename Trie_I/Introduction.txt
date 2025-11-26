@@ -1,0 +1,25 @@
+1. What is Trie Data Structure?
+    A Trie is a special tree-like data structure used to store words or strings efficiently, 
+    especially when many of them share prefixes.
+
+2. Why Use a Trie?
+    Because tries make certain operations very fast, especially:
+        Check if a word exists
+        List all words starting with a prefix (“auto”, “app”, etc.)
+        Autocomplete suggestions
+        Spell-checking
+        Predictive text.
+
+3. Trie Vs HashMap
+    | Feature                           | Trie                                           | HashMap                                       |
+    |-----------------------------------|------------------------------------------------|---------------------------------------------- |
+    | Definition                        | Tree-like structure storing chars in sequence  | Key–value structure storing whole words       |
+    | Best For                          | Prefix search, autocomplete, spell-check       | Fast exact lookup                             |
+    | Insert/Search Time Complexity     | O(length of word)                              | Average O(1)                                  |
+    | Prefix Search                     | Excellent (O(length of prefix))                | Poor (must scan all keys)                     |
+    | Memory Usage                      | High (many nodes & pointers)                   | Low                                           |
+    | Sorted Order                      | Naturally stores words lexicographically       | No order (unless using ordered map)           |
+    | Shared Prefix Efficiency          | Very good (prefix stored once)                 | None (duplicates prefixes in keys)            |
+    | Non-existing Word Search          | O(length)                                      | O(1)                                          |
+    | Implementation Difficulty         | Moderate (custom nodes needed)                 | Easy (built-in structure)                     |
+    | Use Cases                         | Dictionary, autocomplete, predictive text      | Exact word lookup, key-value storage          |
